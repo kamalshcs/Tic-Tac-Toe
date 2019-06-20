@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+.body{
+  padding:5px;
+  background-color: coral;
+  border-radius: 5px;
+}
+p{
+  font-size: 25px;
+  color:white;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: 10% 10% 10%;
+  padding:5px;
+  border-radius: 20px;
+}
+.grid-item {
+  border: 1px solid teal;
+  padding: 40px;
+  font-size: 30px;
+  border-radius: 5px;
+  color:white;
+ }
+button{
+  border-radius: 5px;
+  padding:10px;
+  background-color: teal;
+  border-color:white;
+  color:white;
+  font-size: 20px
+}
+div.grid-item{
+    background-color:coral;
+}
+</style>
+
+
+<script type="text/javascript">
+  
+  function click1() {
+  a=document.getElementById("c1").innerHTML= "x";
+  }
+
+  function dclick1() {
+  a=document.getElementById("c1").innerHTML = "o"
+  }
+
+
+  function click2() {
+  b=document.getElementById("c2").innerHTML= "x";
+  }
+
+  function dclick2() {
+  b=document.getElementById("c2").innerHTML = "o"
+  }
+
+
+  function click3() {
+  c=document.getElementById("c3").innerHTML= "x";
+  }
+
+  function dclick3() {
+  c=document.getElementById("c3").innerHTML = "o"
+  }
+
+
+  function click4() {
+  d=document.getElementById('c4').innerHTML= "x";
+  }
+
+  function dclick4() {
+  d=document.getElementById("c4").innerHTML = "o"
+  }
+
+
+  function click5() {
+  e=document.getElementById("c5").innerHTML= "x";
+  }
+
+  function dclick5() {
+  e=document.getElementById("c5").innerHTML = "o"
+  }
+
+
+  function click6() {
+  f=document.getElementById("c6").innerHTML= "x";
+  }
+
+  function dclick6() {
+  f=document.getElementById("c6").innerHTML = "o"
+  }
+
+
+  function click7() {
+  g=document.getElementById("c7").innerHTML= "x";
+  }
+
+  function dclick7() {
+  g=document.getElementById("c7").innerHTML = "o"
+  }
+
+
+  function click8() {
+  h=document.getElementById("c8").innerHTML= "x";
+  }
+
+  function dclick8() {
+  h=document.getElementById("c8").innerHTML = "o"
+  }
+
+
+  function click9() {
+  i=document.getElementById("c9").innerHTML= "x";
+  }
+
+  function dclick9() {
+  i=document.getElementById("c9").innerHTML = "o"
+  }
+
+  function bclick(){
+  
+  if (a&&b&&c) 
+  {
+    bingo= "Bingo";
+  } 
+  else if (d&&e&&f)
+  {
+    bingo= "Bingo";
+  }
+  else if (g&&h&&i)
+  {
+    bingo= "Bingo";
+  }
+  else if (a&&e&&i)
+  {
+    bingo= "Bingo";
+  } 
+  else if (a&&d&&g)
+  {
+    bingo= "Bingo";
+  }
+  else if (b&&e&&h)
+  {
+    bingo= "Bingo";
+  }
+  else if (c&&f&&i)
+  {
+    bingo= "Bingo";
+  }
+  else 
+  {
+    bingo= "Damn!";
+  }
+document.getElementById("demo").innerHTML = bingo;
+}
+
+
+</script>
+
+</head>
+
+
+
+<body>
+
+<div class="body">
+  <p>Click once to put a "X".</p>
+  <p>Double click to put a "O".</p>
+  <p>Click the check button to check if Bingo!</p>
+</div>
+
+<div class="grid-container">
+
+  <button onclick="click1('c1')" ondblclick="dclick1('c1')">
+  <div class="grid-item" id="c1"></div>
+  </button>
+
+  <button onclick="click2('c2')" ondblclick="dclick2('c2')">
+  <div class="grid-item" id="c2"></div>
+  </button>
+  
+  <button onclick="click3('c3')" ondblclick="dclick3('c3')">
+  <div class="grid-item" id="c3"></div>  
+  </button>
+  
+  <button onclick="click4('c4')" ondblclick="dclick4('c4')">
+  <div class="grid-item" id="c4"></div>
+  </button>
+  
+  <button onclick="click5('c5')" ondblclick="dclick5('c5')">
+  <div class="grid-item" id="c5"></div>
+  </button>
+
+  <button onclick="click6('c6')" ondblclick="dclick6('c6')">
+  <div class="grid-item" id="c6"></div>  
+  </button>
+
+  <button onclick="click7('c7')" ondblclick="dclick7('c7')">
+  <div class="grid-item" id="c7"></div>
+  </button>
+
+  <button onclick="click8('c8')" ondblclick="dclick8('c8')">
+  <div class="grid-item" id="c8"></div>
+  </button>
+
+  <button onclick="click9('c9')" ondblclick="dclick9('c9')">
+  <div class="grid-item" id="c9"></div>  
+  </button>
+<br>
+<br>
+
+  <button onclick="bclick()">check</button><br>
+  <p id="demo"></p>
+
+
+</div>
+
+</body>
+</html>
