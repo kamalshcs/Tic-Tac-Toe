@@ -49,82 +49,100 @@ div.grid-item{
   
   function click1() {
    a=document.getElementById("c1").innerHTML= "x";
+   document.getElementById("myBtn").addEventListener("click", bclick());
   }
 
   function dclick1() {
-   a=document.getElementById("c1").innerHTML = "o"
+   a=document.getElementById("c1").innerHTML = "o";
+     document.getElementById("myBtn").addEventListener("click", bclick());
   }
 
 
   function click2() {
    b=document.getElementById("c2").innerHTML= "x";
+     document.getElementById("myBtn").addEventListener("click", bclick());
   }
 
   function dclick2() {
-   b=document.getElementById("c2").innerHTML = "o"
+   b=document.getElementById("c2").innerHTML = "o";
+     document.getElementById("myBtn").addEventListener("click", bclick());
   }
 
 
   function click3() {
    c=document.getElementById("c3").innerHTML= "x";
+     document.getElementById("myBtn").addEventListener("click", bclick());
   }
 
   function dclick3() {
-   c=document.getElementById("c3").innerHTML = "o"
+   c=document.getElementById("c3").innerHTML = "o";
+     document.getElementById("myBtn").addEventListener("click", bclick());
   }
 
 
   function click4() {
    d=document.getElementById('c4').innerHTML= "x";
+     document.getElementById("myBtn").addEventListener("click", bclick());
   }
 
   function dclick4() {
-  d=document.getElementById("c4").innerHTML = "o"
+  d=document.getElementById("c4").innerHTML = "o";
+    document.getElementById("myBtn").addEventListener("click", bclick());
   }
 
 
   function click5() {
    e=document.getElementById("c5").innerHTML= "x";
+     document.getElementById("myBtn").addEventListener("click", bclick());
   }
 
   function dclick5() {
-  e=document.getElementById("c5").innerHTML = "o"
+  e=document.getElementById("c5").innerHTML = "o";
+    document.getElementById("myBtn").addEventListener("click", bclick());
   }
 
 
   function click6() {
   f=document.getElementById("c6").innerHTML= "x";
+    document.getElementById("myBtn").addEventListener("click", bclick());
   }
 
   function dclick6() {
-   f=document.getElementById("c6").innerHTML = "o"
+   f=document.getElementById("c6").innerHTML = "o";
+     document.getElementById("myBtn").addEventListener("click", bclick());
   }
 
 
   function click7() {
    g=document.getElementById("c7").innerHTML= "x";
+     document.getElementById("myBtn").addEventListener("click", bclick());
   }
 
   function dclick7() {
-  g=document.getElementById("c7").innerHTML = "o"
+  g=document.getElementById("c7").innerHTML = "o";
+    document.getElementById("myBtn").addEventListener("click", bclick());
   }
 
 
   function click8() {
    h=document.getElementById("c8").innerHTML= "x";
+     document.getElementById("myBtn").addEventListener("click", bclick());
   }
 
   function dclick8() {
-  h=document.getElementById("c8").innerHTML = "o"
+  h=document.getElementById("c8").innerHTML = "o";
+    document.getElementById("myBtn").addEventListener("click", bclick());
   }
 
 
   function click9() {
    i=document.getElementById("c9").innerHTML= "x";
+     document.getElementById("myBtn").addEventListener("click", bclick());
   }
 
   function dclick9() {
-   i=document.getElementById("c9").innerHTML = "o"
+   i=document.getElementById("c9").innerHTML = "o";
+     document.getElementById("myBtn").addEventListener("click", bclick());
   }
 
  
@@ -188,45 +206,45 @@ document.getElementById("demo").innerHTML = bingo;
 
 <div class="grid-container">
 
-  <button onclick="click1('c1')" ondblclick="dclick1('c1')">
+  <button id="myBtn" onclick="click1('c1')" ondblclick="dclick1('c1')">
   <div class="grid-item" id="c1"></div>
   </button>
 
-  <button onclick="click2('c2')" ondblclick="dclick2('c2')">
+  <button id="myBtn" onclick="click2('c2')" ondblclick="dclick2('c2')">
   <div class="grid-item" id="c2"></div>
   </button>
   
-  <button onclick="click3('c3')" ondblclick="dclick3('c3')">
+  <button id="myBtn" onclick="click3('c3')" ondblclick="dclick3('c3')">
   <div class="grid-item" id="c3"></div>  
   </button>
   
-  <button onclick="click4('c4')" ondblclick="dclick4('c4')">
+  <button id="myBtn" onclick="click4('c4')" ondblclick="dclick4('c4')">
   <div class="grid-item" id="c4"></div>
   </button>
   
-  <button onclick="click5('c5')" ondblclick="dclick5('c5')">
+  <button id="myBtn" onclick="click5('c5')" ondblclick="dclick5('c5')">
   <div class="grid-item" id="c5"></div>
   </button>
 
-  <button onclick="click6('c6')" ondblclick="dclick6('c6')">
+  <button id="myBtn" onclick="click6('c6')" ondblclick="dclick6('c6')">
   <div class="grid-item" id="c6"></div>  
   </button>
 
-  <button onclick="click7('c7')" ondblclick="dclick7('c7')">
+  <button id="myBtn" onclick="click7('c7')" ondblclick="dclick7('c7')">
   <div class="grid-item" id="c7"></div>
   </button>
 
-  <button onclick="click8('c8')" ondblclick="dclick8('c8')">
+  <button id="myBtn" onclick="click8('c8')" ondblclick="dclick8('c8')">
   <div class="grid-item" id="c8"></div>
   </button>
 
-  <button onclick="click9('c9')" ondblclick="dclick9('c9')">
+  <button id="myBtn" onclick="click9('c9')" ondblclick="dclick9('c9')">
   <div class="grid-item" id="c9"></div>  
   </button>
 <br>
 <br>
 
-  <button onclick="bclick()">check</button><br>
+  
 </div>
 <p id="demo"></p>
 
