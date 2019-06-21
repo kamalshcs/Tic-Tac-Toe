@@ -8,14 +8,20 @@
   background-color: coral;
   border-radius: 5px;
 }
-p{
+h3{
   font-size: 25px;
   color:white;
+  font-family:sans-serif; 
+}
+#demo{
+  color:teal;
+  font-size: 30px;
+  font-family:sans-serif; 
 }
 .grid-container {
   display: grid;
   grid-template-columns: 10% 10% 10%;
-  padding:5px;
+  padding:3px;
   border-radius: 20px;
 }
 .grid-item {
@@ -42,34 +48,34 @@ div.grid-item{
 <script type="text/javascript">
   
   function click1() {
-  a=document.getElementById("c1").innerHTML= "x";
+   a=document.getElementById("c1").innerHTML= "x";
   }
 
   function dclick1() {
-  a=document.getElementById("c1").innerHTML = "o"
+   a=document.getElementById("c1").innerHTML = "o"
   }
 
 
   function click2() {
-  b=document.getElementById("c2").innerHTML= "x";
+   b=document.getElementById("c2").innerHTML= "x";
   }
 
   function dclick2() {
-  b=document.getElementById("c2").innerHTML = "o"
+   b=document.getElementById("c2").innerHTML = "o"
   }
 
 
   function click3() {
-  c=document.getElementById("c3").innerHTML= "x";
+   c=document.getElementById("c3").innerHTML= "x";
   }
 
   function dclick3() {
-  c=document.getElementById("c3").innerHTML = "o"
+   c=document.getElementById("c3").innerHTML = "o"
   }
 
 
   function click4() {
-  d=document.getElementById('c4').innerHTML= "x";
+   d=document.getElementById('c4').innerHTML= "x";
   }
 
   function dclick4() {
@@ -78,7 +84,7 @@ div.grid-item{
 
 
   function click5() {
-  e=document.getElementById("c5").innerHTML= "x";
+   e=document.getElementById("c5").innerHTML= "x";
   }
 
   function dclick5() {
@@ -91,12 +97,12 @@ div.grid-item{
   }
 
   function dclick6() {
-  f=document.getElementById("c6").innerHTML = "o"
+   f=document.getElementById("c6").innerHTML = "o"
   }
 
 
   function click7() {
-  g=document.getElementById("c7").innerHTML= "x";
+   g=document.getElementById("c7").innerHTML= "x";
   }
 
   function dclick7() {
@@ -105,7 +111,7 @@ div.grid-item{
 
 
   function click8() {
-  h=document.getElementById("c8").innerHTML= "x";
+   h=document.getElementById("c8").innerHTML= "x";
   }
 
   function dclick8() {
@@ -114,46 +120,53 @@ div.grid-item{
 
 
   function click9() {
-  i=document.getElementById("c9").innerHTML= "x";
+   i=document.getElementById("c9").innerHTML= "x";
   }
 
   function dclick9() {
-  i=document.getElementById("c9").innerHTML = "o"
+   i=document.getElementById("c9").innerHTML = "o"
   }
 
-  function bclick(){
+ 
+
+  function bclick()
+  {
+  if (a==b&&b==c) 
+  {
+    bingo= "Bingo! (top horizonatl)";
+  } 
+  else if (d==e&&e==f)
+  {
+    bingo= "Bingo! (middle horizontal)";
+  }
+  else if (g==h&&g==i)
+  {
+    bingo= "Bingo! (bottom horizontal)";
+  }
+  else if (a==e&&e==i)
+  {
+     bingo= "Bingo! (l-r diagnol)";
+  } 
+  else if (a==d&&d==g)
+  {
+     bingo= "Bingo (left vertical)";
+  }
+  else if (b==e&&e==h)
+  {
+     bingo= "Bingo (middle vertical)";
+  }
+  else if (c==f&&f==i)
+  {
+     bingo= "Bingo (right vertical)";
+  }
+  else if (c==e&&e==h)
+  {
+     bingo= "Bingo (r-l diagnol)";
+  }
   
-  if (a&&b&&c) 
-  {
-    bingo= "Bingo";
-  } 
-  else if (d&&e&&f)
-  {
-    bingo= "Bingo";
-  }
-  else if (g&&h&&i)
-  {
-    bingo= "Bingo";
-  }
-  else if (a&&e&&i)
-  {
-    bingo= "Bingo";
-  } 
-  else if (a&&d&&g)
-  {
-    bingo= "Bingo";
-  }
-  else if (b&&e&&h)
-  {
-    bingo= "Bingo";
-  }
-  else if (c&&f&&i)
-  {
-    bingo= "Bingo";
-  }
   else 
   {
-    bingo= "Damn!";
+     bingo= "...Try again...";
   }
 document.getElementById("demo").innerHTML = bingo;
 }
@@ -168,9 +181,9 @@ document.getElementById("demo").innerHTML = bingo;
 <body>
 
 <div class="body">
-  <p>Click once to put a "X".</p>
-  <p>Double click to put a "O".</p>
-  <p>Click the check button to check if Bingo!</p>
+  <h3>Click once to put a "X".</h3>
+  <h3>Double click to put a "O".</h3>
+  <h3>Click the check button to check if Bingo!</h3>
 </div>
 
 <div class="grid-container">
@@ -214,10 +227,8 @@ document.getElementById("demo").innerHTML = bingo;
 <br>
 
   <button onclick="bclick()">check</button><br>
-  <p id="demo"></p>
-
-
 </div>
+<p id="demo"></p>
 
 </body>
 </html>
